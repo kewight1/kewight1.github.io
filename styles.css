@@ -188,7 +188,8 @@ h1 {
   overflow: hidden;
   background: #000000;
 }
-.video-wrapper iframe {
+.video-wrapper iframe,
+.video-wrapper video {
   display: block;
   width: 100%;
   height: 100%;
