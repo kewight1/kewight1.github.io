@@ -391,9 +391,17 @@ h1 {
   font-size: 0.8rem;
 }
 @media (max-width: 850px) {
-  .header-inner { min-height: 82px; }
-  .main-nav { display: none; }
-  .menu-toggle { display: inline-block; }
+  .header-inner { flex-wrap: wrap; }
+.main-nav { 
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  width: 100%;
+  padding-top: 12px;
+}
+.main-nav a { font-size: 0.95rem; }
+.menu-toggle { display: none; }
   .hero-grid,
   .intro-grid {
     grid-template-columns: 1fr;
